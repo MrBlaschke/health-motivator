@@ -1,0 +1,187 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+
+.debug-border {
+   border: 1px dotted red;
+}
+
+/*input, textarea, keygen, select, button, option {
+   font-size: 15px !important;
+   color: red;
+}*/
+
+html {
+   /*font: 300 14px / 22px 'CentraleSansCndMedium';*/
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+
+   color: #656565;
+}
+
+
+/*
+Custom Form7 Darstellung anpassen - START
+Checkboxen untereinander
+*/
+span.wpcf7-list-item {
+   margin-left: 0.2em;
+   display: block;
+}
+
+/* Text innerhalb der Eingabefelder (Placeholder) einfaerben*/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #bcbcbc !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #bcbcbc;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #bcbcbc;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #bcbcbc;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    #bcbcbc;
+}
+
+span.wpcf7-list-item-label {
+   margin-left: 0.3em;
+}
+
+
+/*Absenden Button modifizieren*/
+.uk-button-primary:hover, .uk-button-primary:focus {
+   color: #1997d9 !important;
+}
+
+.uk-button-primary, .uk-button-primary {
+   color: #ffffff !important;
+}
+
+/*
+Custom Form7 Darstellung anpassen - ENDE
+*/
+
+
+/*Link in Cookie-Richtlinien-Layover*/
+a#fom {
+	color: #008cc6 !important;
+}
+
+.uk-navbar {
+   margin-bottom: 25px;
+
+   /*background-image: -webkit-linear-gradient(top, #3a62cf, #233c7d);*/
+   /*background-image: -webkit-linear-gradient(top, #233c7d, #233c7d);*/
+
+   /*STANDARD-Hintergrund*/
+   /*background-color: rgb(35, 60, 125);*/
+   background-color: #2598d6;
+   /*background: pink !important;*/
+
+}
+
+.uk-navbar-nav > li > a:active, .uk-navbar-nav > li.uk-active > a {
+   /*SELECTED Farbe*/
+   background-color: #233c7d;
+   /*background-color: #2598d6;*/
+   color: #ffffff;
+}
+
+.uk-navbar-nav > li > a:hover {
+   /*HOVER Farbe*/
+   /*background-color: #3a62cf;*/
+   background-color: #233c7d;
+   color: #ffffff;
+}
+
+.uk-navbar-nav > li > a {
+   padding: 0 10px;
+   color: #ffffff;
+}
+
+.tm-headerbar {
+   height: 140px;
+}
+
+.uk-search-field:focus, .uk-search.uk-active .uk-search-field {
+   width: 250px;
+   left: 20px;
+}
+
+.uk-text-large {
+   color: #2598d6;
+}
+
+.uk-button-huge {
+   background-size: 100% 45px;
+   background-position: 100% -45px;
+   min-height: 45px;
+   padding: 0 15px;
+   line-height: 45px;
+   font-size: 20px;
+}
+
+/*Etwas mehr Platz auf der rechten Seite bei den Textcontainern im Slider*/
+ .extra_space_slider {
+   padding-right: 40px;
+   padding-top: 10px;
+   overflow: hidden;
+ }
+
+[class*='uk-icon-'] {
+   font-size: 1.5em;
+   font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, .uk-article-title {
+ 	color: #004f8f;
+}
+
+h6 {
+   margin: 0 0 20px 0;
+   /*font-family: 'CentraleSansCndMedium';*/
+}
+
+.uk-navbar-nav > li > a {
+   /*font-family: 'CentraleSansCndMedium';*/
+}
+
+/*Hintergrundmuster entfernen*/
+.tm-top-teaser {
+	height: inherit !important;
+	background: none;
+	background-color: white;
+}
+
+.tm-footer {
+   margin-top: 0px !important;
+   color: white;
+   background: #344449;
+}
+
+.ninja-forms-form-wrap select {
+	width: 100% !important;
+}
+
+div#ninja_forms_field_18_div_wrap.field-wrap.text-wrap.label-inside {
+	width: 20% !important;
+	float: left;
+	/*margin-right: 20px;*/
+}
+
+div#ninja_forms_field_19_div_wrap.field-wrap.text-wrap.label-inside {
+	width: 80% !important;
+	float: left;
+	padding-left: 20px;
+}
+
+.wk-slideshow-default .nav, .wk-slideshow, .wk-slideshow .slides {
+   background-color: #ffffff !important;
+}

@@ -1,0 +1,66 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+// Variables
+// ========================================================================
+
+
+// Additional style fixes
+// ========================================================================
+
+.woocommerce,
+.woocommer-page {
+
+    // Button overrides
+    a.button,
+    button.button,
+    input.button,
+    input[type="submit"],
+    #respond input#submit,
+    #content input.button {
+
+        font-weight: lighter;
+
+        &:hover,
+        &:focus {
+            background-image: @button-background-image;
+            background-position: 0% 0%;
+            background-repeat: no-repeat;
+        }
+
+        &.alt {
+            background-image: @button-primary-background-image;
+            background-position: 100% -@button-height;
+            background-repeat: no-repeat;
+
+            &:hover,
+            &:focus {
+                background-image: @button-primary-background-image;
+                background-position: 0% 0%;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    // Input font weight reset
+    select,
+    textarea,
+    input:not([type]),
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"] { font-weight: lighter; }
+
+    // Price font weight reset
+    ul.products li.product .price { font-weight: lighter; }
+
+}

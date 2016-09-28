@@ -1,0 +1,96 @@
+// Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+//
+// Component: Modal
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@modal-z-index:                                 (@global-z-index + 10);
+
+@modal-dialog-background:                       @global-background;
+
+//
+// New
+//
+
+@modal-dialog-blank-close-background:          @global-primary-background;
+@modal-dialog-blank-close-color:               @global-contrast-color;
+@modal-dialog-blank-close-width:               50px;
+@modal-dialog-blank-close-height:              @modal-dialog-blank-close-width;
+
+
+// Component
+// ========================================================================
+
+.hook-modal() {}
+
+
+// Sub-object: `uk-modal-dialog`
+// ========================================================================
+
+.hook-modal-dialog() {}
+
+
+// Modifier: `uk-modal-dialog-lightbox`
+// ========================================================================
+
+.hook-modal-dialog-lightbox() {}
+
+
+// Sub-object: `uk-modal-header`
+// ========================================================================
+
+.hook-modal-header() {}
+
+
+// Sub-object: `uk-modal-footer`
+// ========================================================================
+
+.hook-modal-footer() {}
+
+
+// Sub-object: `uk-modal-caption`
+// ========================================================================
+
+.hook-modal-caption() {}
+
+
+// Sub-object: `uk-modal-spinner`
+// ========================================================================
+
+.hook-modal-spinner() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-modal-misc() {
+
+    .uk-modal-dialog-blank .uk-modal-close {
+        background: @modal-dialog-blank-close-background;
+        color: @modal-dialog-blank-close-color;
+        opacity: 1;
+    }
+
+    .uk-modal-dialog-blank .uk-modal-close:hover { opacity: 0.6; }
+
+    .uk-modal-dialog-blank > .uk-close:first-child {
+        top: 0;
+        right: 0;
+    }
+
+    // Tablet and bigger
+    @media (min-width: @breakpoint-medium) {
+
+        .uk-modal-dialog-blank .uk-modal-close:first-child {
+            width: @modal-dialog-blank-close-width;
+            height: @modal-dialog-blank-close-height;
+        }
+
+    }
+
+}
