@@ -27,7 +27,7 @@ wp-content/uploads/
 wp-content/upgrade/
 wp-content/themes/*
 wp-content/*
-!wp-content/themes/yoo_unity_wp/
+!wp-content/themes/yoo_unity_wp/*
 
 
 
